@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drink Finder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form class="drinkform">
+    <input type="text" class="drinkInput" placeholder="Enter drink">
+    <button type="submit">Search</button>
+  </form>
+
+  <div class="main">
+    <div class="drinklist"></div>
+
+    <div class="group">
+      <h2>Add to Group</h2>
+      <p>Drinks in group: <span class="groupcount">0</span> / 7</p>
+      <ol class="grouplist"></ol>
+    </div>
+  </div>
+
+  <div class="modal">
+    <div class="modalcontent">
+      <button class="closebutton">Close</button>
+      <div class="modalbody"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+body{
+  font-family: Arial, sans-serif;
+  background-color: rgba(9, 9, 10, 0.454);
+  margin: 0;
+}
+.drinkform{
+  margin: 10px;
+}
+.drinkInput{
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  border: 2px solid rgba(0, 0, 0, 0.242);
+  border-radius: 10px;
+  margin: 10px;
+  width: 200px;
+}
+button[type="submit"]{
+  padding: 10px 20px;
+  font-weight: bold;
+  background-color: rgb(97, 27, 178);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button[type="submit"]:hover{
+  background-color: rgb(174, 141, 145);
+}
+.main{
+  display: flex;
+  gap: 20px;
+  margin: 20px;
+}
+.drinklist{
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.group{
+  width: 30%;
+  background-color: rgb(168, 123, 123);
+  padding: 15px;
+  border-radius: 5px;
+  height: fit-content;
+}
+.card{
+  background: linear-gradient(190deg, rgba(255, 0, 0, 0.635), white);
+  padding: 15px;
+  box-shadow: 2px 2px 5px black;
+  width: 200px;
+  border-radius: 5px;
+}
+.card img{
+  width: 100%;
+}
+.card button{
+  margin: 5px 5px 0 0;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.modal{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}
+.modalcontent{
+  background-color: white;
+  padding: 20px;
+  width: 400px;
+  max-height: 80%;
+  overflow: auto;
+  border-radius: 5px;
+}
+.modalcontent img{
+  width: 150px;
+}
+.errorDisplay{
+  font-size: 2rem;
+  font-weight: bold;
+  color: hsla(0, 0%, 0%, 0.757);
+}
